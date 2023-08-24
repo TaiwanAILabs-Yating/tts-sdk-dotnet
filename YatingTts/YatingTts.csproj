@@ -3,6 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>YatingTts</PackageId>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Authors>AI Labs API Team</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/TaiwanAILabs-Yating/tts-sdk-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Copyright AI Labs 2023</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
