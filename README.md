@@ -1,4 +1,4 @@
-# Yating TTS SDK - Go version
+# Yating TTS SDK - .NET version
 
 ## Available Key
 
