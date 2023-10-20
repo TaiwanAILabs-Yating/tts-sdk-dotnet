@@ -11,10 +11,10 @@ namespace YatingTts.Dto
         [JsonPropertyName("audioConfig")]
         public AudioConfigDto AudioConfig { get; set; }
 
-        public RequestDto(string inputText, string inputType, string voiceModel, string audioEncoding, string audioSampleRate)
+        public RequestDto(string inputText, string inputType, string voiceModel, double voiceSpeed, double voicePitch, double voiceEnergy, string audioEncoding, string audioSampleRate)
         {
             this.Input = new InputDto(inputText, inputType);
-            this.Voice = new VoiceDto(voiceModel);
+            this.Voice = new VoiceDto(voiceModel, voiceSpeed, voicePitch, voiceEnergy);
             this.AudioConfig = new AudioConfigDto(audioEncoding, audioSampleRate);
         }
     }
@@ -23,10 +23,19 @@ namespace YatingTts.Dto
     {
         [JsonPropertyName("model")]
         public string Model { get; set; }
+        [JsonPropertyName("speed")]
+        public double Speed { get; set; }
+        [JsonPropertyName("pitch")]
+        public double Pitch { get; set; }
+        [JsonPropertyName("energy")]
+        public double Energy { get; set; }
 
-        public VoiceDto(string model)
+        public VoiceDto(string model, double speed, double pitch, double energy)
         {
             this.Model = model;
+            this.Speed = speed;
+            this.Pitch = pitch;
+            this.Energy = energy;
         }
     }
 
