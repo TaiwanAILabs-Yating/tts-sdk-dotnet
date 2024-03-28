@@ -28,6 +28,7 @@ namespace YatingTts.Constants
                 case VoiceModel.TaiFemale2:
                 case VoiceModel.TaiMale1:
                     list.Add(SR16k);
+                    list.Add(SR22k);
                     break;
             }
 
